@@ -9,6 +9,7 @@ body {
     background: #bbc6fa;
 }
 
+
 .qoute-box {
     background: linear-gradient(#eeaeca, #b2d3b7, #94bbe9);
     max-width: 700px; /* Changed width to max-width */
@@ -90,7 +91,7 @@ body {
 }
 
 .qoute-box button img {
-    width: 20px;
+    width: 10px;
     margin-right: 10px;
 }
 
@@ -99,8 +100,9 @@ body {
     color: #333;
 }
 
+
 /* Media Query for Responsive Design */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 60px) {
     .qoute-box {
         width: 80%;
         padding: 3%;
