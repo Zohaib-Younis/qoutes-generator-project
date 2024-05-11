@@ -1,83 +1,81 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #bbc6fa;
 }
 
-.qoute-box{
-    background: linear-gradient(#eeaeca,#b2d3b7,#94bbe9);
-    width: 700px;
+.qoute-box {
+    background: linear-gradient(#eeaeca, #b2d3b7, #94bbe9);
+    max-width: 700px; /* Changed width to max-width */
+    width: 90%; /* Added percentage width for responsiveness */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 40px;
+    transform: translate(-50%, -50%);
+    padding: 5%; /* Changed padding for responsiveness */
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
-
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.qoute-box h2{
-    font-size: 32px;
-    margin-bottom: 40px;
+.qoute-box h2 {
+    font-size: 2rem; /* Changed to rem unit for better responsiveness */
+    margin-bottom: 2rem; /* Changed margin for responsiveness */
     position: relative;
-     
 }
 
-.qoute-box h2::after{
+.qoute-box h2::after {
     content: '';
-    width: 75px;
+    width: 50%; /* Changed width for responsiveness */
     height: 3px;
     border-radius: 3px;
     background: rgb(23, 124, 229);
     position: absolute;
-    bottom: -10px;
+    bottom: -0.625rem; /* Changed units for responsiveness */
     left: 50%;
     transform: translateX(-50%);
 }
 
-.qoute-box blockquote{
-    font-size: 26px;
-    min-height: 110px;
+.qoute-box blockquote {
+    font-size: 1.625rem; /* Changed to rem unit for better responsiveness */
+    min-height: 8rem; /* Changed height for responsiveness */
 }
-.qoute-box blockquote::before, .qoute-box blockquote ::after{
+
+.qoute-box blockquote::before,
+.qoute-box blockquote::after {
     content: '"';
 }
 
-.qoute-box span{
+.qoute-box span {
     display: block;
-    margin-top: 10px;
+    margin-top: 1rem; /* Changed margin for responsiveness */
     float: right;
     position: relative;
-
 }
 
-.qoute-box span::before{
+.qoute-box span::before {
     content: '';
-    width: 20px;
-    height: 2px ;
- 
-    background: rgb(23, 124,  229);
+    width: 10px; /* Changed width for responsiveness */
+    height: 2px;
+    background: rgb(23, 124, 229);
     position: absolute;
     top: 50%;
-    left: -30px;
+    left: -1.5rem; /* Changed units for responsiveness */
 }
 
-.qoute-box div{
+.qoute-box div {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 2rem; /* Changed margin for responsiveness */
     display: flex;
     justify-content: center;
-
 }
 
-.qoute-box button{
+.qoute-box button {
     background: rgb(23, 124, 229);
     color: #fff;
     border-radius: 25px;
@@ -91,13 +89,39 @@ body{
     cursor: pointer;
 }
 
-.qoute-box button img{
+.qoute-box button img {
     width: 20px;
     margin-right: 10px;
-
 }
 
-.qoute-box button:nth-child(2){
+.qoute-box button:nth-child(2) {
     background: transparent;
     color: #333;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .qoute-box {
+        width: 80%;
+        padding: 3%;
+    }
+
+    .qoute-box h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .qoute-box blockquote {
+        font-size: 1.25rem;
+        min-height: 6rem;
+    }
+
+    .qoute-box span::before {
+        width: 8px;
+        left: -1rem;
+    }
+
+    .qoute-box div {
+        margin-top: 1.5rem;
+    }
 }
