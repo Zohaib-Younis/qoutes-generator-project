@@ -12,6 +12,7 @@ body {
 
 .qoute-box {
     background: linear-gradient(#eeaeca, #b2d3b7, #94bbe9);
+    margin-left: 80px;
     max-width: 700px; /* Changed width to max-width */
     width: 90%; /* Added percentage width for responsiveness */
     position: absolute;
